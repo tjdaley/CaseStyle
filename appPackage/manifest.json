@@ -1,0 +1,73 @@
+{
+	"$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+	"version": "1.0.0",
+	"manifestVersion": "1.16",
+	"id": "${{TEAMS_APP_ID}}",
+	"packageName": "com.package.name",
+	"name": {
+		"short": "Case Style",
+		"full": "Capture and Display the Case Style Information"
+	},
+	"developer": {
+		"name": "KoonsFuller PC",
+		"mpnId": "",
+		"websiteUrl": "https://www.koonsfuller.com",
+		"privacyUrl": "https://github.com/tjdaley/teams/wiki/Privacy",
+		"termsOfUseUrl": "https://github.com/tjdaley/teams/wiki/Terms-of-Use"
+	},
+	"description": {
+		"short": "Capture and Display the Case Style Information",
+		"full": "This is intended to be a tab on a case-management channel. The purpose of this tab is to capture and display case style information, e.g. Cause Number, State, County, Court Type, Court Number, and Date Filed"
+	},
+	"icons": {
+		"outline": "outline.png",
+		"color": "color.png"
+	},
+	"accentColor": "#FFFFFF",
+	"configurableTabs": [
+		{
+			"configurationUrl": "https://pay.jdbot.us/crm",
+			"canUpdateConfiguration": true,
+			"scopes": [
+				"team"
+			],
+			"context": [
+				"channelTab"
+			]
+		}
+	],
+	"validDomains": [
+		"pay.jdbot.us"
+	],
+	"webApplicationInfo": {
+		"id": "ac1d3299-d97e-4ee2-b5d4-d3f1c5c342b4",
+		"resource": ""
+	},
+	"defaultGroupCapability": {
+		"team": "tab",
+		"groupchat": "tab",
+		"meetings": "tab"
+	},
+	"configurableProperties": [
+		"name",
+		"shortDescription",
+		"longDescription",
+		"smallImageUrl",
+		"largeImageUrl",
+		"accentColor",
+		"privacyUrl",
+		"developerUrl",
+		"termsOfUseUrl"
+	],
+	"authorization": {
+		"permissions": {
+			"orgWide": [],
+			"resourceSpecific": [
+				{
+					"name": "ChannelMeeting.ReadBasic.Group",
+					"type": "Application"
+				}
+			]
+		}
+	}
+}
